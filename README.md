@@ -58,7 +58,7 @@
 | 20  |fixed quiz.py to provide post responses   |Ishan          |Ishan         |
 | 21  |Polished the items.html and style         |Siddharth      |Siddharth     |
 | 22  |Applied polished style to all pages       |Siddharth      |Siddharth     |
-| 23  |                                          |               |              |
+| 23  |fix items route                           |Ishan          |Ishan         |
 | 24  |                                          |               |              |
 | 25  |                                          |               |              |
 | 26  |                                          |               |              |
