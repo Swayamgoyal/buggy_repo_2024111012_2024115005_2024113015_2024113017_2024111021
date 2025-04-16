@@ -1,4 +1,5 @@
-const baseURL = "http://localhost:8001";
+const baseURL = "http://localhost:8000";
+// changed from 8001 to 8000
 
 async function loadAnalytics() {
   const res = await fetch(`${baseURL}/analytics`);

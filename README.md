@@ -44,7 +44,7 @@
 | 6   |         fixed profile.js                                 |      athmeeya         |    athmeeya          |
 | 7   |       changed in profile.html usercounts to usercount                                   |   athmeeya            |          athmeeya    |
 | 8   |analytics.py updated Fetch users from DB              |swayam               |swayam              |
-| 9   |                                          |               |              |
+| 9   |           changed from 8001 to 8000 in analytics.js                               |    athmeeya           |       athmeeya       |
 | 10  |                                          |               |              |
 | 11  |                                          |               |              |
 | 12  |                                          |               |              |
