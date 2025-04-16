@@ -47,7 +47,7 @@
 | 9   |changed from 8001 to 8000 in analytics.js |athmeeya       |athmeeya      |
 | 10  |Add CORS middleware in main.py            |swayam         |swayam        |
 | 11  |Add event listener in news.js             |Ishan          |Ishan         |
-| 12  |                                          |               |              |
+| 12  |Define data structures for backend        |Ishan          |Ishan         |
 | 13  |                                          |               |              |
 | 14  |                                          |               |              |
 | 15  |                                          |               |              |
