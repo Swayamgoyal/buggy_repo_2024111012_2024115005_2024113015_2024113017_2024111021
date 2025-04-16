@@ -48,8 +48,8 @@
 | 10  |Add CORS middleware in main.py            |swayam         |swayam        |
 | 11  |Add event listener in news.js             |Ishan          |Ishan         |
 | 12  |Define data structures for backend        |Ishan          |Ishan         |
-| 13  |   added base url in profile.js                                       |      saksham         |       saksham       |
-| 14  |                                          |               |              |
+| 13  |added base url in profile.js              |saksham        |saksham       |
+| 14  |fix users in analytics.py                 |Ishan          |Ishan         |
 | 15  |                                          |               |              |
 | 16  |                                          |               |              |
 | 17  |                                          |               |              |

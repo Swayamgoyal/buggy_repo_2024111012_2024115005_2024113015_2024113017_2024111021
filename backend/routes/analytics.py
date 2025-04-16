@@ -5,8 +5,11 @@ import matplotlib.pyplot as plt
 import io
 import base64
 from typing import List
-from ..models import User  # Assuming User model exists
-from .. import db  # Assuming db connection
+from models import Item  # Assuming Item model exists
+
+# from ..models import User  # Assuming User model exists
+from models import User  # Assuming User model exists
+# from .. import db  # Assuming db connection
 
 router = APIRouter()
 
@@ -17,13 +20,21 @@ async def get_items_collection():
     return init_db()["items_collection"]
 
 
+async def get_users_collection():
+    from db import init_db
+
+    return init_db()["users_collection"]
+
+
 @router.get("/")
 async def get_analytics():
     items_collection = await get_items_collection()
+    users_collection = await get_users_collection()
 
-    # Fetch users from DB instead of hardcoded list
-    users_cursor = db.users_collection.find()  # Example fetch
-    users_list = [User(**user) for user in users_cursor]  # Convert to User models
+    users_list = []
+    async for user in users_collection.find():
+        user["_id"] = str(user["_id"])
+        users_list.append(user)
 
     items = []
     async for item in items_collection.find():
@@ -36,7 +47,7 @@ async def get_analytics():
         np.array([len(item["names"]) for item in items]) if items else np.array([])
     )
     user_username_lengths = (
-        np.array([len(user.username) for user in users_list])
+        np.array([len(user["username"]) for user in users_list])
         if users_list
         else np.array([])
     )
