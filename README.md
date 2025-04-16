@@ -41,7 +41,7 @@
 | 3   | home.js is not required                  |saksham        |saksham       |
 | 4   |  fixed navbar                                       |     saksham          |      saksham        |
 | 5   |Fixed charset in index.html                                          |           Siddharth      |           Siddharth   |
-| 6   |                                          |               |              |
+| 6   |         fixed profile.js                                 |      athmeeya         |    athmeeya          |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
