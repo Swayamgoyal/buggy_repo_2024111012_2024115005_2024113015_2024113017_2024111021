@@ -36,7 +36,7 @@
 
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
-| 1   | Style.css is not filled                  |Narain         |Whole Team    |
+| 1   | Style.css is not filled                  |Narain         |swayam        |
 | 2   | in profile.html styles change to scripts |athmeeya       |athmeeya      |
 | 3   | home.js is not required                  |saksham        |saksham       |
 | 4   |  fixed navbar                                       |     saksham          |      saksham        |
