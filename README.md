@@ -46,16 +46,16 @@
 | 8   |analytics.py updated Fetch users from DB  |swayam         |swayam        |
 | 9   |changed from 8001 to 8000 in analytics.js |athmeeya       |athmeeya      |
 | 10  |Add CORS middleware in main.py            |swayam         |swayam        |
-| 11  |Add event listener in news.js             |Ishan          |Ishan         |
-| 12  |Define data structures for backend        |Ishan          |Ishan         |
+| 11  |add event listener in news.js             |Ishan          |Ishan         |
+| 12  |define data structures for backend        |Ishan          |Ishan         |
 | 13  |added base url in profile.js              |saksham        |saksham       |
-| 14  |fix users in analytics.py                 |Ishan          |Ishan         |
+| 14  |fix analytics route                       |Ishan          |Ishan         |
 | 15  |Added container in items.html             |Siddharth      |Siddharth     |
 | 16  |Added button function in items.js         |Siddharth      |Siddharth     |
 | 17  |fixed in users.py (delete.all(), router.post(twice))|athmeeya|athmeeya   |
 | 18  |items.py has 2 post options               |swayam         |swayam        |
 | 19  |changed delete one, updated logic of get  |swayam         |swayam        |
-| 20  |fixed quiz.py to provide post responses   |Ishan          |Ishan         |
+| 20  |fix quiz route                            |Ishan          |Ishan         |
 | 21  |Polished the items.html and style         |Siddharth      |Siddharth     |
 | 22  |Applied polished style to all pages       |Siddharth      |Siddharth     |
 | 23  |fix items route                           |Ishan          |Ishan         |
