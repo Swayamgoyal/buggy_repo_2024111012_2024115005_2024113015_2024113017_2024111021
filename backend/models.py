@@ -10,7 +10,7 @@ class PyObjectId(ObjectId):
         yield cls.validate
 
     @classmethod
-    def validate(cls, v):
+    def validate(cls, v, field=None):
         if not ObjectId.is_valid(v):
             raise ValueError("Invalid objectid")
         return ObjectId(v)
@@ -24,9 +24,7 @@ class PyObjectId(ObjectId):
 class Item(BaseModel):  # Inherit from BaseModel
     # Use PyObjectId for id if mapping directly to MongoDB _id
     id: Optional[PyObjectId] = Field(default_factory=PyObjectId, alias="_id")
-    # Corrected type for name: str instead of int
-    name: str  # Corrected type
-    value: float
+    name: str
     description: Optional[str] = None
 
     class Config:
