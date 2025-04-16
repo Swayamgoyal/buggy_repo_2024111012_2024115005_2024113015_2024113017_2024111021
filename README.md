@@ -40,7 +40,7 @@
 | 2   | in profile.html styles change to scripts |athmeeya       |athmeeya      |
 | 3   | home.js is not required                  |saksham        |saksham       |
 | 4   |  fixed navbar                                       |     saksham          |      saksham        |
-| 5   |                                          |               |              |
+| 5   |Fixed charset in index.html                                          |           Siddharth      |           Siddharth   |
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
