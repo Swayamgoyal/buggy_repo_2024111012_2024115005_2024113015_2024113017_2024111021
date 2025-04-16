@@ -9,46 +9,49 @@ questions = [
         "id": 1,
         "text": "What command lists directory contents?",
         "options": ["ls", "cd", "rm", "pwd"],
-        "correct": "ls"
+        "correct": "ls",
     },
     {
         "id": 2,
         "text": "Which command searches for text in files?",
         "options": ["find", "grep", "locate", "cat"],
-        "correct": "grep"
+        "correct": "grep",
     },
     {
         "id": 3,
         "text": "What changes file permissions?",
         "options": ["chmod", "chown", "mv", "cp"],
-        "correct": "chmod"
+        "correct": "chmod",
     },
     {
         "id": 4,
         "text": "Which command displays the current directory?",
         "options": ["dir", "pwd", "path", "where"],
-        "correct": "pwd"
+        "correct": "pwd",
     },
     {
         "id": 5,
         "text": "What removes a file?",
         "options": ["rm", "del", "erase", "unlink"],
-        "correct": "rm"
-    }
+        "correct": "rm",
+    },
 ]
 
 game_state = {"high_score": 0}
+
+
 # god would hate me for not dockerizing this repo
 @router.get("/question")
 async def get_question():
-    question = questions[1]
+    question = random.choice(questions)
     return {
         "id": question["id"],
         "text": question["text"],
-        "options": question["options"]
+        "options": question["options"],
     }
 
-@router.get("/answer")
+
+@router.post("/answer")
 async def submit_answer(data: dict):
     question_id = data.get("id")
     answer = data.get("answer")
@@ -68,8 +71,9 @@ async def submit_answer(data: dict):
         "is_correct": is_correct,
         "correct_answer": question["correct"],
         "score": score,
-        "high_score": game_state["high_score"]
+        "high_score": game_state["high_score"],
     }
+
 
 @router.get("/highscore")
 async def get_highscore():
