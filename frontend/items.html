@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Items</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Items</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <nav>
-    <!-- Excited for the new Mission Impossible movie ? -->
-    <a href="index.html">Home</a>
-    <a href="items.html">Items</a>
-    <a href="profile.html">Profile</a>
-    <a href="analytics.html">Analytics</a>
-    <a href="news.html">News</a>
-    <a href="quiz.html">Quiz</a>
-    <!-- added quiz.html -->
-  </nav>
-  <!-- fuck I think I deleted a container, god help me-->
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./items.html">Items</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./analytics.html">Analytics</a>
+        <a href="./news.html">News</a>
+        <a href="./quiz.html">Quiz</a>
+    </nav>
+    
+    <main class="container">
+        <h1>Items Manager</h1>
+        
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search items...">
+                <p id="itemCount">Total items: 0</p>
+            </div>
+        </section>
 
-  <script src="scripts/items.js"></script>
+        <section class="form-section">
+            <form id="itemForm">
+                <input type="text" id="name" placeholder="Item Name" required>
+                <input type="text" id="description" placeholder="Item Description" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section class="items-section">
+            <h2>Stored Items</h2>
+            <div class="items-container">
+                <ul id="itemList" class="items-grid"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scripts/items.js"></script>
 </body>
 </html>
