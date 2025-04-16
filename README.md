@@ -50,8 +50,8 @@
 | 12  |Define data structures for backend        |Ishan          |Ishan         |
 | 13  |added base url in profile.js              |saksham        |saksham       |
 | 14  |fix users in analytics.py                 |Ishan          |Ishan         |
-| 15  |Added container in index.html             |Siddharth      |Siddharth     |
-| 16  |Added button function in index.js         |Siddharth      |Siddharth     |
+| 15  |Added container in items.html             |Siddharth      |Siddharth     |
+| 16  |Added button function in items.js         |Siddharth      |Siddharth     |
 | 17  |          fixed in users.py                                | athmeeya              |       athmeeya       |
 | 18  |                                          |               |              |
 | 19  |                                          |               |              |
