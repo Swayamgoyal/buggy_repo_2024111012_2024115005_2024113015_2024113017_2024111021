@@ -41,7 +41,7 @@
 | 3   |home.js is not required                   |saksham        |saksham       |
 | 4   |fixed navbar                              |saksham        |saksham       |
 | 5   |Fixed charset in index.html               |Siddharth      |Siddharth     |
-| 6   |fixed profile.js                          |athmeeya       |athmeeya      |
+| 6   |fixed profile.js                          |saksham        |saksham       |
 | 7   |changed in profile.html usercounts to usercount|athmeeya  |athmeeya      |
 | 8   |analytics.py updated Fetch users from DB  |swayam         |swayam        |
 | 9   |changed from 8001 to 8000 in analytics.js |athmeeya       |athmeeya      |
