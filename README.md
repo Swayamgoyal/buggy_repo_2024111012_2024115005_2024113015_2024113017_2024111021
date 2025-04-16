@@ -52,10 +52,10 @@
 | 14  |fix users in analytics.py                 |Ishan          |Ishan         |
 | 15  |Added container in items.html             |Siddharth      |Siddharth     |
 | 16  |Added button function in items.js         |Siddharth      |Siddharth     |
-| 17  |          fixed in users.py (delete.all(), router.post(twice))                               | athmeeya              |       athmeeya       |
-| 18  |items.py has 2 post options               |swayam          |  swayam               |
-| 19  |changed delete one, updated logic of get  | swayam                 |swayam           |
-| 20  |                                          |               |              |
+| 17  |fixed in users.py (delete.all(), router.post(twice))|athmeeya|athmeeya   |
+| 18  |items.py has 2 post options               |swayam         |swayam        |
+| 19  |changed delete one, updated logic of get  |swayam         |swayam        |
+| 20  |fixed quiz.py to provide post responses   |Ishan          |Ishan         |
 | 21  |                                          |               |              |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
