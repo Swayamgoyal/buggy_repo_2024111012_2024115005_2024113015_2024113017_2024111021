@@ -43,7 +43,7 @@
 | 5   |Fixed charset in index.html                                          |           Siddharth      |           Siddharth   |
 | 6   |         fixed profile.js                                 |      athmeeya         |    athmeeya          |
 | 7   |       changed in profile.html usercounts to usercount                                   |   athmeeya            |          athmeeya    |
-| 8   |                                          |               |              |
+| 8   |analytics.py updated Fetch users from DB              |swayam               |swayam              |
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
 | 11  |                                          |               |              |
