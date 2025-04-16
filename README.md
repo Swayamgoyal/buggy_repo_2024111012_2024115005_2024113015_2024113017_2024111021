@@ -26,7 +26,11 @@
 
 ### Add the names of the members and roll numbers of your team below
 
-- Name : Roll Number
+- Athmeeya M Kashyap - 2024113015
+- Saksham Goyal - 2024115005
+- Swayam Goyal - 2024111012
+- Ishan Bansal - 2024113017
+- Siddharth - 2024111021
 
 ### Table to keep track
 
