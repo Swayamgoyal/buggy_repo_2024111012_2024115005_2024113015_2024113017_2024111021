@@ -36,17 +36,17 @@
 
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
-| 1   | Style.css is not filled                  |Narain         |swayam        |
-| 2   | in profile.html styles change to scripts |athmeeya       |athmeeya      |
-| 3   | home.js is not required                  |saksham        |saksham       |
-| 4   |  fixed navbar                                       |     saksham          |      saksham        |
-| 5   |Fixed charset in index.html                                          |           Siddharth      |           Siddharth   |
-| 6   |         fixed profile.js                                 |      athmeeya         |    athmeeya          |
-| 7   |       changed in profile.html usercounts to usercount                                   |   athmeeya            |          athmeeya    |
-| 8   |analytics.py updated Fetch users from DB              |swayam               |swayam              |
-| 9   |           changed from 8001 to 8000 in analytics.js                               |    athmeeya           |       athmeeya       |
+| 1   |Style.css is not filled                   |Narain         |swayam        |
+| 2   |in profile.html styles change to scripts  |athmeeya       |athmeeya      |
+| 3   |home.js is not required                   |saksham        |saksham       |
+| 4   |fixed navbar                              |saksham        |saksham       |
+| 5   |Fixed charset in index.html               |Siddharth      |Siddharth     |
+| 6   |fixed profile.js                          |athmeeya       |athmeeya      |
+| 7   |changed in profile.html usercounts to usercount|athmeeya  |athmeeya      |
+| 8   |analytics.py updated Fetch users from DB  |swayam         |swayam        |
+| 9   |changed from 8001 to 8000 in analytics.js |athmeeya       |athmeeya      |
 | 10  |Add CORS middleware in main.py            |swayam         |swayam        |
-| 11  |                                          |               |              |
+| 11  |Add event listener in news.js             |Ishan          |Ishan         |
 | 12  |                                          |               |              |
 | 13  |                                          |               |              |
 | 14  |                                          |               |              |
