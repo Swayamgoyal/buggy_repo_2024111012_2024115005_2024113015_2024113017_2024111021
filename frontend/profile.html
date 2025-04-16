@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Profiles</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Profiles</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <nav>
-    <!-- Excited for the new Mission Impossible movie ? -->
-    <a href="index.html">Home</a>
-    <a href="items.html">Items</a>
-    <a href="profile.html">Profile</a>
-    <a href="analytics.html">Analytics</a>
-    <a href="news.html">News</a>
-    <a href="quiz.html">Quiz</a>
-    <!-- added quiz.html -->
-  </nav>
-  <div class="container">
-    <!-- Please suggest some good music, I am tired of my playlist -->
-    <p id="userCount">Total users: 0</p>
-    <!-- changed usercounts to usercount -->
-    <input type="text" id="search" placeholder="Search users..." />
-    <h1>🧑 User Profiles</h1>
-    <form id="userForm">
-      <input type="text" id="username" placeholder="Username" required />
-      <input type="text" id="bio" placeholder="Bio" required />
-      <button type="submit">Add User</button>
-    </form>
-    <ul id="userList"></ul>
-  </div>
+    <nav class="modern-nav">
+        <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="./items.html"><i class="fas fa-box"></i> Items</a>
+        <a href="./profile.html" class="active"><i class="fas fa-user"></i> Profile</a>
+        <a href="./analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a>
+        <a href="./news.html"><i class="fas fa-newspaper"></i> News</a>
+        <a href="./quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
+    </nav>
+    
+    <main class="container">
+        <h1 class="page-title">User Profiles <i class="fas fa-users"></i></h1>
+        
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search" placeholder="Search users...">
+                </div>
+                <p id="userCount" class="item-count">Total users: 0</p>
+            </div>
+        </section>
 
-  <script src="scripts/profile.js"></script>
-  <!-- changed styles to scripts here -->
+        <section class="form-section">
+            <form id="userForm" class="add-item-form">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="text" id="bio" placeholder="Bio" required>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-plus"></i> Add User
+                </button>
+            </form>
+        </section>
+
+        <section class="items-section">
+            <h2 class="section-title">User List</h2>
+            <div class="items-container">
+                <ul id="userList" class="items-grid"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/profile.js"></script>
 </body>
 </html>

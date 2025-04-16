@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>News Feed</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-  <body>
-    <nav>
-      <!-- Excited for the new Mission Impossible movie ? -->
-      <a href="index.html">Home</a>
-      <a href="items.html">Items</a>
-      <a href="profile.html">Profile</a>
-      <a href="analytics.html">Analytics</a>
-      <a href="news.html">News</a>
-      <a href="quiz.html">Quiz</a>
-      <!-- added quiz.html -->
+<body>
+    <nav class="modern-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="items.html"><i class="fas fa-box"></i> Items</a>
+        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+        <a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a>
+        <a href="news.html" class="active"><i class="fas fa-newspaper"></i> News</a>
+        <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
     </nav>
-    <!-- Did I make this code buggy ??? -->
-    <div class="container">
-      <h1>📰 News Feed</h1>
-      <p id="articleCount">Total articles: 0</p>
-      <input type="text" id="search" placeholder="Search news..." />
-      <select id="source">
-        <option value="all">All Sources</option>
-        <option value="bbc">BBC</option>
-        <option value="guardian">The Guardian</option>
-      </select>
-      <div id="newsList" class="news-scrollable"></div>
-      <div id="loading" style="display: none;">Loading...</div>
-    </div>
+
+    <main class="container">
+        <h1 class="page-title">News Feed <i class="fas fa-rss"></i></h1>
+
+        <section class="news-controls">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search" placeholder="Search news...">
+                </div>
+                <div class="source-selector">
+                    <i class="fas fa-filter"></i>
+                    <select id="source" class="modern-select">
+                        <option value="all">All Sources</option>
+                        <option value="bbc">BBC</option>
+                        <option value="guardian">The Guardian</option>
+                    </select>
+                </div>
+                <p id="articleCount" class="item-count">Total articles: 0</p>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div id="newsList" class="news-grid"></div>
+            <div id="loading" class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <span>Loading...</span>
+            </div>
+        </section>
+    </main>
+
     <script src="scripts/news.js"></script>
-  </body>
+</body>
 
 </html>

@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Analytics</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Analytics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Did I GPT this code???-->
-    <nav>
-      <!-- Excited for the new Mission Impossible movie ? -->
-      <a href="index.html">Home</a>
-      <a href="items.html">Items</a>
-      <a href="profile.html">Profile</a>
-      <a href="analytics.html">Analytics</a>
-      <a href="news.html">News</a>
-      <a href="quiz.html">Quiz</a>
-      <!-- added quiz.html -->
+    <nav class="modern-nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="items.html"><i class="fas fa-box"></i> Items</a>
+        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+        <a href="analytics.html" class="active"><i class="fas fa-chart-bar"></i> Analytics</a>
+        <a href="news.html"><i class="fas fa-newspaper"></i> News</a>
+        <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
     </nav>
-    <h1>📊 Analytics</h1>
-    <div id="stats">
-      <p>Items: <span id="itemCount">0</span></p>
-      <p>Users: <span id="userCount">0</span></p>
-      <p>Avg Item Name Length: <span id="avgItemName">0</span></p>
-      <p>Avg Username Length: <span id="avgUserName">0</span></p>
-      <p>Max Item Name Length: <span id="maxItemName">0</span></p>
-      <p>Max Username Length: <span id="maxUserName">0</span></p>
-    </div>
-    <img id="plot" src="" alt="Analytics Plot" style="max-width: 100%;" />
-  </div>
+    
+    <main class="container">
+        <h1 class="page-title">Analytics Dashboard <i class="fas fa-chart-line"></i></h1>
+        
+        <section class="analytics-grid">
+            <div class="analytics-card">
+                <h3><i class="fas fa-box"></i> Items Stats</h3>
+                <div class="stat-group">
+                    <div class="stat-item">
+                        <p>Total Count:</p>
+                        <span id="itemCount" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>Avg Name Length:</p>
+                        <span id="avgItemName" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>Max Name Length:</p>
+                        <span id="maxItemName" class="stat-value">0</span>
+                    </div>
+                </div>
+            </div>
 
-  <script src="scripts/analytics.js"></script>
+            <div class="analytics-card">
+                <h3><i class="fas fa-users"></i> Users Stats</h3>
+                <div class="stat-group">
+                    <div class="stat-item">
+                        <p>Total Count:</p>
+                        <span id="userCount" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>Avg Username Length:</p>
+                        <span id="avgUserName" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>Max Username Length:</p>
+                        <span id="maxUserName" class="stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="analytics-card">
+            <h3><i class="fas fa-chart-area"></i> Data Visualization</h3>
+            <div class="chart-container">
+                <img id="plot" src="" alt="Analytics Plot" class="analytics-chart">
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/analytics.js"></script>
 </body>
 </html>
