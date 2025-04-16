@@ -53,8 +53,8 @@
 | 15  |Added container in items.html             |Siddharth      |Siddharth     |
 | 16  |Added button function in items.js         |Siddharth      |Siddharth     |
 | 17  |          fixed in users.py                                | athmeeya              |       athmeeya       |
-| 18  |                                          |               |              |
-| 19  |                                          |               |              |
+| 18  |items.py has 2 post options               |swayam          |  swayam               |
+| 19  |changed delete one, updated logic of get  | swayam                 |swayam           |
 | 20  |                                          |               |              |
 | 21  |                                          |               |              |
 | 22  |                                          |               |              |
