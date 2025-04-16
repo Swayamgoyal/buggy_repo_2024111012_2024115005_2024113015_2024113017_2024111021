@@ -39,7 +39,7 @@
 | 1   | Style.css is not filled                  |Narain         |Whole Team    |
 | 2   | in profile.html styles change to scripts |athmeeya       |athmeeya      |
 | 3   | home.js is not required                  |saksham        |saksham       |
-| 4   |                                          |               |              |
+| 4   |   added link to quiz.html in index.html in navbar                                       |     saksham          |      saksham        |
 | 5   |                                          |               |              |
 | 6   |                                          |               |              |
 | 7   |                                          |               |              |
