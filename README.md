@@ -52,7 +52,7 @@
 | 14  |fix users in analytics.py                 |Ishan          |Ishan         |
 | 15  |Added container in index.html             |Siddharth      |Siddharth     |
 | 16  |Added button function in index.js         |Siddharth      |Siddharth     |
-| 17  |                                          |               |              |
+| 17  |          fixed in users.py                                | athmeeya              |       athmeeya       |
 | 18  |                                          |               |              |
 | 19  |                                          |               |              |
 | 20  |                                          |               |              |
