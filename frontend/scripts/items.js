@@ -15,6 +15,8 @@ async function loadItems(searchTerm = "") {
   filteredItems.forEach(item => {
     const li = document.createElement("li");
     li.className = "item-card";
+    li.style.opacity = "0";
+    li.style.transform = "translateY(20px)";
     
     li.innerHTML = `
       <div class="item-content">
@@ -25,11 +27,18 @@ async function loadItems(searchTerm = "") {
     
     const deleteBtn = document.createElement("button");
     deleteBtn.className = "delete-btn";
-    deleteBtn.textContent = "Delete";
+    deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
     deleteBtn.onclick = () => deleteItem(item._id);
     
     li.appendChild(deleteBtn);
     list.appendChild(li);
+
+    // Trigger animation
+    setTimeout(() => {
+      li.style.opacity = "1";
+      li.style.transform = "translateY(0)";
+      li.style.transition = "all 0.3s ease";
+    }, 50);
   });
 }
 

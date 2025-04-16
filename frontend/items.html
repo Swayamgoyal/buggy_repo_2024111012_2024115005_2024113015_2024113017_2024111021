@@ -4,37 +4,45 @@
     <meta charset="UTF-8" />
     <title>Items</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./items.html">Items</a>
-        <a href="./profile.html">Profile</a>
-        <a href="./analytics.html">Analytics</a>
-        <a href="./news.html">News</a>
-        <a href="./quiz.html">Quiz</a>
+    <nav class="modern-nav">
+        <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="./items.html" class="active"><i class="fas fa-box"></i> Items</a>
+        <a href="./profile.html"><i class="fas fa-user"></i> Profile</a>
+        <a href="./analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a>
+        <a href="./news.html"><i class="fas fa-newspaper"></i> News</a>
+        <a href="./quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
     </nav>
     
     <main class="container">
-        <h1>Items Manager</h1>
+        <h1 class="page-title">Items Manager <i class="fas fa-boxes"></i></h1>
         
         <section class="search-section">
             <div class="search-container">
-                <input type="text" id="search" placeholder="Search items...">
-                <p id="itemCount">Total items: 0</p>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search" placeholder="Search items...">
+                </div>
+                <p id="itemCount" class="item-count">Total items: 0</p>
             </div>
         </section>
 
         <section class="form-section">
-            <form id="itemForm">
-                <input type="text" id="name" placeholder="Item Name" required>
-                <input type="text" id="description" placeholder="Item Description" required>
-                <button type="submit">Add Item</button>
+            <form id="itemForm" class="add-item-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Item Name" required>
+                    <input type="text" id="description" placeholder="Item Description" required>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-plus"></i> Add Item
+                </button>
             </form>
         </section>
 
         <section class="items-section">
-            <h2>Stored Items</h2>
+            <h2 class="section-title">Stored Items</h2>
             <div class="items-container">
                 <ul id="itemList" class="items-grid"></ul>
             </div>

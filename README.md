@@ -56,7 +56,7 @@
 | 18  |items.py has 2 post options               |swayam         |swayam        |
 | 19  |changed delete one, updated logic of get  |swayam         |swayam        |
 | 20  |fixed quiz.py to provide post responses   |Ishan          |Ishan         |
-| 21  |                                          |               |              |
+| 21  |Polished the items.html and style         |Siddharth      |Siddharth     |
 | 22  |                                          |               |              |
 | 23  |                                          |               |              |
 | 24  |                                          |               |              |
